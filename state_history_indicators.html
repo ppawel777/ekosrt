@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/webix.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Эко-мониторинг</title>
+  </head>
+  <body>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Header -->
+    <header class="navbar sticky-top flex-md-nowrap shadow">
+      <div class="logo-container">
+        <a href="/">
+          <svg height="45" viewBox="0 0 70 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35 0.000206411C22.3779 -0.0334596 10.0894 4.05195 0 11.6363L35 58.3271L70 11.6363C59.9105 4.05205 47.6221 -0.033347 35 0.000206411Z" fill="#FF6900"/>
+          </svg>
+        </a>
+        <!-- ЭкоМониторинг -->
+        <span class="logo-text">
+          ЭкоМониторинг
+        </span>
+      </div>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-login-container">
+        <div class="navbar-login-text">
+          <span class="navbar-login-text-username">Иванов Марк Витальевич</span>
+          <a href="mailto:mark@ivanov-lpwan.ru"><span class="navbar-login-text-email">mark@ivanov-lpwan.ru</span></a>
+        </div>
+        <div class="navbar-login-icon">
+          <a href="#" title="Выйти">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 36.466 40">
+              <g>
+                <path d="M6061.386,77.667l-9.47-9.47a1.8,1.8,0,0,0-2.549,0l-.408.409a1.8,1.8,0,0,0,0,2.549l5.7,5.7h-20.079a1.8,1.8,0,0,0-1.8,1.8v.577a1.8,1.8,0,0,0,1.8,1.8h20.079l-5.7,5.7a1.8,1.8,0,0,0,0,2.548l.408.409a1.8,1.8,0,0,0,2.549,0l9.47-9.47a1.8,1.8,0,0,0,0-2.549Z" transform="translate(-6025.448 -58.942)" fill="#a2aaad"/>
+                <path d="M6043.545,95.136h-10.179a4.113,4.113,0,0,1-4.113-4.112V66.86a4.113,4.113,0,0,1,4.113-4.113h10.179a1.9,1.9,0,1,0,0-3.805H6029.56a4.112,4.112,0,0,0-4.112,4.112V94.829a4.113,4.113,0,0,0,4.112,4.113h13.985a1.9,1.9,0,1,0,0-3.806Z" transform="translate(-6025.448 -58.942)" fill="#a2aaad"/>
+              </g>
+            </svg>
+          </a>
+        </div> 
+      </div>
+      <!-- <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Войти</a>
+        </li>
+      </ul> -->
+    </header>
+        <!-- Menu -->
+        <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Пост ЭкоМониторинга</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Журнал мониторинга</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Тренд концентрации</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Отчет ЭкоМониторинга</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Content -->
+        <main class="col-md-10 ms-sm-auto main-content">
+          <h5 class="h5 pt-3">Пост ЭкоМониторинга</h5>
+          <div>
+            <h6 class="h6">Состояние и история измерений показателя</h6><i title="Обновить" class="fa fa-refresh refresh-btn" aria-hidden="true"></i>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+            <div class="post-monitoring-block-left">
+              <!--  -->
+             Спидометр
+            </div>
+            <div class="post-monitoring-block-right">
+              <div class="block-text-center">Изменение показателя за 24 часа</div>
+              <canvas class="my-4 w-100" id="myChart" width="800" height="300"></canvas>
+            </div>
+          </div>
+          <div id="mainView"></div>
+          <div id="pagerB_here"></div>
+        </main>
+
+        <footer class="navbar-fixed-bottom row-fluid">
+          <div class="footer">
+            <span>© 2021 ООО «СОВРЕМЕННЫЕ РАДИО ТЕХНОЛОГИИ»</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+    <script src="js/webix.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
