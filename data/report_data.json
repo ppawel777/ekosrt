@@ -1,0 +1,6 @@
+[
+{"stuff":"Метан(CH4)","placeX":"55.751436","placeY":"37.618869","percent":"20%","pdk":"1,065","ndv":"0,981","val_5m":"1,028","val_20m":"0,891","data_val_min":"0,041","data_val_max":"3,581","val_month":"1,081","doc":"Текст из CONST","temp":"28℃","wind":"147°(град)"},
+{"stuff":"Сероводород (H2S)","placeX":"55.751436","placeY":"37.618869","percent":"20%","pdk":"1,065","ndv":"0,981","val_5m":"1,028","val_20m":"0,891","data_val_min":"0,041","data_val_max":"3,581","val_month":"1,081","doc":"Текст из CONST","temp":"28℃","wind":"147°(град)"},
+{"stuff":"Оксид углерода(СО)","placeX":"55.751436","placeY":"37.618869","percent":"20%","pdk":"1,065","ndv":"0,981","val_5m":"1,028","val_20m":"0,891","data_val_min":"0,041","data_val_max":"3,581","val_month":"1,081","doc":"Текст из CONST","temp":"28℃","wind":"147°(град)"},
+{"stuff":"Аммиак(NH3)","placeX":"55.751436","placeY":"37.618869","percent":"20%","pdk":"1,065","ndv":"0,981","val_5m":"1,028","val_20m":"0,891","data_val_min":"0,041","data_val_max":"3,581","val_month":"1,081","doc":"Текст из CONST","temp":"28℃","wind":"147°(град)"}
+]

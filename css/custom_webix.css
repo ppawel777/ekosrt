@@ -1,0 +1,21 @@
+.webix_view .webix_pager_item_selected {
+  background-color: #FF6900;
+  font-family: "Montserrat-Medium", "Arial", sans-serif;
+  font-size: 12px;
+}
+
+.webix_view .webix_pager_item {
+  color: #FF6900;
+  font-family: "Montserrat-Medium", "Arial", sans-serif;
+  font-size: 12px;
+}
+
+.webix_view .webix_pager_item_selected:hover {
+  background-color: #FF6900;
+}
+.webix_view .webix_pager_item_selected:focus {
+  background-color: #FF6900;
+}
+.webix_view .webix_pager_item_selected:active {
+  background-color: #FF6900;
+}
