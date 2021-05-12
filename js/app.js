@@ -2,16 +2,10 @@
 // Подсветка пунктов меню
 const alinks = document.querySelectorAll('.nav-links');
 const linkList = Array.prototype.slice.call(alinks);
-// const link_url = window.location.pathname.slice(1);
 const link_url = window.location.pathname;
 const regexp = /[^\/]\/.*/g;
-// const test = '/ekosrt/journal_monitoring.html'
 const link_url_result = link_url.match(regexp)[0].slice(2);
 
-console.log(link_url)
-console.log(link_url_result)
-// console.log(test.match(regexp)[0].slice(2))
-// console.log(link_url.match(regexp)[0].slice(1))
 for (let i=0; i < linkList.length; i++) {
   const link_href = linkList[i].getAttribute('href');
   if (link_href !== null && link_href !== '#') {
