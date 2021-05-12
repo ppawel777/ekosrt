@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom_webix.css">
+    <script src="js/vendor/webix/webix.js"></script>
+    <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
     <title>Эко-мониторинг</title>
   </head>
   <body>
@@ -56,7 +59,7 @@
         <!-- Menu -->
         <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse">
           <div class="position-sticky pt-3">
-            <ul class="nav flex-column">
+            <ul class="nav flex-column mt-5">
               <li class="nav-item">
                 <a class="nav-links" aria-current="page" href="index.html">Пост ЭкоМониторинга</a>
               </li>
@@ -64,7 +67,7 @@
                 <a class="nav-links" href="journal_monitoring.html">Журнал мониторинга</a>
               </li>
               <li class="nav-item">
-                <a class="nav-links" href="#">Тренд концентрации</a>
+                <a class="nav-links" href="trend.html">Тренд концентрации</a>
               </li>
               <li class="nav-item">
                 <a class="nav-links" href="report_monitoring.html">Отчет ЭкоМониторинга</a>
@@ -78,7 +81,7 @@
           <section class="wrap-content pt-3">
             <h5 class="h5 pb-3">Отчёт ЭкоМониторинга</h5><i title="Обновить" class="fa fa-refresh refresh-btn" aria-hidden="true"></i>
             <div class="table-container table-fullpage" id="reportMonitoring_tableID"></div>
-            <!-- <div class="paging-container" id="reportMonitoring_pagerID"></div> -->
+            <div class="paging-container" id="reportMonitoring_pagerID"></div>
           </section>
         </main>
 
@@ -91,15 +94,6 @@
     </div>
     
     <script src="js/app.js"></script>
-    <script src="js/vendor/webix/webix.js"></script>
-    <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
-    <!-- <script src="js/vendor/justgauge/raphael-2.1.4.min.js"></script> -->
-    <!-- <script src="js//vendor/justgauge/justgage.js"></script> -->
-    <!-- <script src="js/chartjs/chart.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script> -->
     <script src="js/table/report_monitoring_table.js"></script>
   </body>
 </html>

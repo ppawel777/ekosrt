@@ -96,18 +96,20 @@ const grid = {
   resizeRow: true,
   // scrollX: false,
   // scroll: false,
-  // pager: "pagerA",
+  scrollX: true,
+  scrollY: false,
+  pager: "pagerA",
   url: stateHistory_data
 };
 
-// const pagerA = {
-//   view: "pager",
-//   css: "paging-container",
-//   template:"{common.first()} {common.pages()} {common.last()}",
-//   id: "pagerA",
-//   size: 10,
-//   group: 5
-// };
+const pagerA = {
+  view: "pager",
+  css: "paging-container",
+  template:"{common.first()} {common.pages()} {common.last()}",
+  id: "pagerA",
+  size: 10,
+  group: 5
+};
 
 webix.ready(function(){
   webix.ui({
@@ -116,7 +118,8 @@ webix.ready(function(){
     id: "report", 
     type:"clean", rows:[
       // pagerA,
-      grid
+      grid,
+      pagerA
     ]
   });
 

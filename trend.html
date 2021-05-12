@@ -12,6 +12,7 @@
     <script src="js/vendor/webix/webix.js"></script>
     <script src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
     <title>Эко-мониторинг</title>
   </head>
   <body>
@@ -79,9 +80,15 @@
         <!-- Content -->
         <main class="col-md-10 ms-sm-auto main-content">
           <section class="wrap-content pt-3">
-            <h5 class="h5 pb-3">Журнал мониторинга</h5><i title="Обновить" class="fa fa-refresh refresh-btn" aria-hidden="true"></i>
-            <div class="table-container table-fullpage-pager" id="journalMonitoring_tableID"></div>
-            <div class="paging-container" id="journalMonitoring_pagerID"></div>
+            <h5 class="h5 pb-3">Тренд концентрации</h5><i title="Обновить" class="fa fa-refresh refresh-btn" aria-hidden="true"></i>
+            <div class="d-flex flex-column justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+              <div class="block-text-center">Тренд концентрации веществ за 24 часа</div>
+              <canvas class="my-4 w-100" id="trend_chart" width="400" height="100"></canvas>
+            </div>
+            <div class="table-wrap">
+              <div class="table-container" id="trend_tableID"></div>
+              <div class="paging-container" id="trend_pagerID"></div>
+            </div>
           </section>
         </main>
 
@@ -94,6 +101,7 @@
     </div>
     
     <script src="js/app.js"></script>
-    <script src="js/table/journal_monitoring_table.js"></script>
+    <script src="js/chart/trend_chart.js"></script>
+    <script src="js/table/trend_table.js"></script>
   </body>
 </html>

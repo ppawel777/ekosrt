@@ -119,6 +119,12 @@ a {
   transform: rotate(200deg);
 }
 
+.back-btn {
+  cursor: pointer;
+  margin-right: 1%;
+  color: inherit;
+}
+
 .navbar-login-icon {
   margin-left: 30px;
   transition: 0.4s;
@@ -138,7 +144,7 @@ a {
 
 .navbar-nav .nav-links { font-size: 23px; }
 
-.flex-column { margin-top: 50px; }
+/* .flex-column { margin-top: 50px; } */
 
 .nav-item { padding: 10px; }
 
