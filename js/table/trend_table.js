@@ -1,4 +1,4 @@
-const stateHistory_data = "../data/trend_data.json";
+const stateHistory_data = "data/trend_data.json";
 
 const grid = {
   id: "grid",
