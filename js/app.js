@@ -3,7 +3,7 @@
 const alinks = document.querySelectorAll('.nav-links');
 const linkList = Array.prototype.slice.call(alinks);
 const link_url = window.location.pathname.slice(1);
-
+console.log(link_url)
 for (let i=0; i < linkList.length; i++) {
   const link_href = linkList[i].getAttribute('href');
   if (link_href !== null && link_href !== '#') {
