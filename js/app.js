@@ -5,6 +5,7 @@ const linkList = Array.prototype.slice.call(alinks);
 // const link_url = window.location.pathname.slice(1);
 const link_url = window.location.pathname;
 const regexp = /\/.*/g;
+console.log(link_url)
 console.log(link_url.match(regexp)[0].slice(1))
 for (let i=0; i < linkList.length; i++) {
   const link_href = linkList[i].getAttribute('href');
